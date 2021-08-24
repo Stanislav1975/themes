@@ -133,10 +133,6 @@
 	background-color: var(--wp--custom--button--color--text);
 }
 
-.wp-block-cover {
-	padding: clamp(2em, 15%, 8em);
-}
-
 .wp-block-post-comments .reply a {
 	--wp--custom--button--typography--font-size: var(--wp--preset--font-size--normal);
 	border-style: var(--wp--custom--button--border--style);
