@@ -43,19 +43,6 @@
 	color: var(--wp--preset--color--background);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-p {
-	margin-top: calc( 0.5 * var(--wp--custom--margin--vertical));
-	margin-bottom: calc( 0.5 * var(--wp--custom--margin--vertical));
-=======
-.wp-block-column > p:first-child, .wp-block-column > h1:first-child, .wp-block-column > h2:first-child, .wp-block-column > h3:first-child, .wp-block-column > h4:first-child, .wp-block-column > h5:first-child, .wp-block-column > h6:first-child, .wp-block-group > p:first-child, .wp-block-group > h1:first-child, .wp-block-group > h2:first-child, .wp-block-group > h3:first-child, .wp-block-group > h4:first-child, .wp-block-group > h5:first-child, .wp-block-group > h6:first-child {
-	margin-top: 0;
->>>>>>> Refactor text styles and add padding to groups w border.
-}
-
-=======
->>>>>>> move group and column margin resets to blockbase
 .wp-block-post-author__content {
 	display: flex;
 	flex-direction: column;
@@ -554,9 +541,9 @@ header.wp-block-template-part {
 }
 
 header.wp-block-template-part > .wp-block-group {
-	align-items: flex-end;
+	gap: 0;
 	justify-content: space-between;
-	flex-wrap: wrap-reverse;
+	align-items: flex-start;
 }
 
 header.wp-block-template-part > .wp-block-group > * {
@@ -574,6 +561,36 @@ header.wp-block-template-part > .wp-block-group .wp-block-social-links.is-style-
 
 header.wp-block-template-part > .wp-block-group .wp-block-social-links.is-style-logos-only > .wp-social-link {
 	padding: 0;
+}
+
+header.wp-block-template-part .site-brand {
+	margin-top: 20px;
+	display: grid;
+	grid-column-gap: 30px;
+	grid-template-columns: auto 1fr;
+}
+
+header.wp-block-template-part .site-brand .wp-block-site-logo {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	margin: 0;
+	max-width: 120px;
+	align-self: center;
+	justify-self: flex-end;
+}
+
+header.wp-block-template-part .site-brand .wp-block-site-title {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	margin: 0 0 0.5em;
+}
+
+header.wp-block-template-part .site-brand .wp-block-site-tagline {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	margin: 0;
 }
 
 @media (max-width: 599px) {
