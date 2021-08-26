@@ -1,0 +1,10 @@
+.has-foreground-background-color,
+.has-selection-background-color,
+.has-primary-background-color,
+.has-secondary-background-color {
+	color: var(--wp--preset--color--background);
+}
+
+.has-background-color {
+	background-color: var(--wp--preset--color--primary);
+}
