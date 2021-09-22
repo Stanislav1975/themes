@@ -43,6 +43,6 @@
     "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial"
   },
   "dependencies": {
-    "core-util-is": "^1.0.2"
+    "core-util-is": "^1.0.3"
   }
 }
