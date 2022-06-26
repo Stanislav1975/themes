@@ -39,6 +39,6 @@
 		]
 	},
 	"dependencies": {
-		"wp-prettier": "^2.0.5"
+		"wp-prettier": "^2.6.2"
 	}
 }
